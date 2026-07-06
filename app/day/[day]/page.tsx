@@ -110,6 +110,14 @@ const dayData: Record<number, {
         mapsUrl: "https://www.google.com/maps/search/?api=1&query=Roof+PM+Shanghai",
       },
       {
+        time: "오후",
+        name: "船厂 MIFA 1862 (Shipyard MIFA 1862)",
+        description: "🏭 MIFA 1862\n\n1862년 설립된 상하이 조선소를 일본 건축가 구마 겐고(隈研吾)가 복합 문화 공간으로 탈바꿈시킨 곳입니다. 픽셀 패턴의 오렌지 파사드가 인상적이며, 조선소의 기둥·파이프라인·굴뚝 등 산업 유산을 그대로 보존했습니다. 황푸강 뷰가 훌륭합니다.\n\n· MoMA(뉴욕 현대미술관) 중국 유일 공식 스토어 입점\n· 갤러리·공연장(800석)·카페·레스토랑 등\n· 푸동 와이탄(濱江大道) 수변에 위치\n· 동방명주·상하이타워 등 스카이라인과 인접",
+        address: "1777 Binjiang Ave, Pudong New Area, Shanghai",
+        imagePath: "/images/spot-2-5.jpg",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=MIFA+1862+Shipyard+1777+Binjiang+Avenue+Pudong+Shanghai",
+      },
+      {
         time: "17:00",
         name: "점도덕 딤섬 ⭐⭐⭐",
         description: "🥟 상하이 최고의 딤섬 맛집 점도덕에서 저녁 식사를 즐깁니다. 샤오롱바오(소롱포), 하가우 등 다양한 딤섬을 맛볼 수 있습니다.\n\n석식 포함 (점도덕)",
