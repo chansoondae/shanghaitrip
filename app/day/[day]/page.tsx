@@ -165,6 +165,14 @@ const dayData: Record<number, {
         mapsUrl: "https://www.google.com/maps/search/?api=1&query=Suzhou+Old+Town+China",
       },
       {
+        time: "저녁 전",
+        name: "중화예술궁 (中华艺术宫)",
+        description: "🎨 중화예술궁 (China Art Museum)\n\n2010년 상하이 엑스포 중국관으로 사용된 상징적인 붉은 건물을 미술관으로 재탄생시킨 공간입니다. 지상 41m의 웅장한 외관이 압도적이며, 중국 근현대 미술 작품을 중심으로 대규모 컬렉션을 보유하고 있습니다.\n\n· 무료 입장 (사전 예약 권장)\n· 운영시간: 화~일 10:00~18:00 (월요일 휴관)\n· 6호선 중화예술궁역(中华艺术宫站) 하차\n\n⚠️ 쑤저우 현대미술관 오픈 연기로 대신 방문합니다.",
+        address: "205 Shangnan Rd, Huangpu District, Shanghai",
+        imagePath: "/images/spot-3-8.jpg",
+        mapsUrl: "https://www.google.com/maps/search/?api=1&query=China+Art+Museum+Shanghai+205+Shangnan+Road",
+      },
+      {
         time: "저녁",
         name: "상해 옛거리",
         description: "🏮 상해 옛거리 (上海老街 / 方浜中路 Fangbang Middle Road)\n\n명·청대 양식의 건축이 약 825m에 걸쳐 이어지는 상하이 구시가지의 핵심 거리입니다. 서쪽은 전통 공예품·골동품 상점, 동쪽 끝은 예원(豫园)·성황묘(城隍庙) 상권과 연결됩니다. 무료 입장, 10:00~22:00 운영.\n\n🍜 꼭 먹어봐야 할 것들\n· 샤오롱바오(小笼包) — 한 입에 바로 베어물지 말고, 작은 구멍 내어 국물 먼저 빨아 마신 후 먹을 것\n· 생젠바오(生煎包) — 바닥이 바삭한 팬프라이드 고기만두\n· 취두부(臭豆腐) — 발효 두부 튀김, 도전해볼 것\n· 탕후루(糖葫芦) — 과일 꼬치 사탕\n\n📍 저녁 무렵 홍등이 켜지면 분위기가 절정 — 사진 명소",
