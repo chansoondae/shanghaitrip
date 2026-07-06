@@ -105,7 +105,7 @@ const dayData: Record<number, {
       {
         time: "12:00",
         name: "Roof PM (점심)",
-        description: "🍽️ 예약 요청\n\n중식 포함 (ROOF PM 예약 요청)",
+        description: "🍽️ Roof PM 런치 스페셜 세트 — 188위안/인\n\n· 데일리 셰프 샐러드 또는 데일리 수프 포함\n· 음료 포함: 아메리카노 (Hot/Ice), 레몬티 (Hot), 콜라, 스프라이트, 소다\n\n✅ 메인 선택 (Choice of Main)\n🍝 **클래식 라구 볼로네제 페투치네 파스타** Classic Ragout Bolognese Fettuccine Pasta ⭐\n🍗 **허브 구운 뼈없는 닭다리** Grilled Herbed Boneless Chicken Leg ⭐\n🦆 **오리 콩피** Duck Leg Confit ⭐\n🐙 **그릴 문어** Grilled Ocean Octopus (+20위안) ⭐\n🐑 **뉴질랜드 양갈비** Irish Lamb Rack 2pc (+20위안)\n🐟 **구운 연어** Grilled Salmon\n\n⭐ 인기 메뉴: 볼로네제 파스타, 닭다리, 오리 콩피, 구운 문어\n❌ 비추천: 양갈비, 연어",
         imagePath: "/images/spot-2-2.jpg",
         mapsUrl: "https://www.google.com/maps/search/?api=1&query=Roof+PM+Shanghai",
       },
