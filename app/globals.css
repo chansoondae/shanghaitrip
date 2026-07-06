@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ff6b35;
+  --primary-soft: #fff1eb;
+  --accent: #1e40af;
+  --neutral-bg: #fafaf9;
+  --neutral-card: #ffffff;
+  --neutral-border: #e7e5e4;
+  --neutral-text: #1c1917;
+  --neutral-sub: #78716c;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--neutral-bg);
+  color: var(--neutral-text);
+  overflow-x: hidden;
+}
+
+@media print {
+  header, nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
