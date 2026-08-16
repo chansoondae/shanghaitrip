@@ -5,7 +5,7 @@ import { BottomNav } from "@/components/layout/BottomNav";
 import { FontSizeProvider } from "@/components/FontSizeProvider";
 
 export const metadata: Metadata = {
-  title: "차가운순대님과 상하이 아트 투어 feat. 모란디, 쑤저우",
+  title: "차순과 상하이 아트 투어 feat. 모란디, 쑤저우",
   description: "2026.08.22 ~ 08.24 몽트래블 상하이 아트 투어 일정표",
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>",
