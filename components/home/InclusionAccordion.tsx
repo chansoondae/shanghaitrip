@@ -1,5 +1,5 @@
-const included = ["숙박 3박", "전용버스", "여행자보험", "전 일정 식사 (2일차 Roof PM 제외)", "TAX 포함"];
-const excluded = ["2일차 중식 Roof PM (예약은 해둠)", "가이드 경비 USD 40 (미국 달러로 준비)", "매너팁", "개인 쇼핑비"];
+const included = ["숙박 2박", "전용버스", "여행자보험", "전 일정 식사 (2일차 Roof PM 제외)", "TAX 포함"];
+const excluded = ["항공권", "2일차 중식 Roof PM (예약은 해둠)", "가이드 경비 USD 30 (미국 달러로 준비)", "매너팁", "개인 쇼핑비"];
 
 function Section({ title, items, color }: { title: string; items: string[]; color: string }) {
   return (

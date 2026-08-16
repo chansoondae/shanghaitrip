@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Plane, Bus, Mountain, PlaneLanding, Info } from "lucide-react";
+import { Plane, Bus, PlaneLanding, Info } from "lucide-react";
 
 const tabs = [
   { href: "/day/1", icon: Plane, label: "1일차" },
   { href: "/day/2", icon: Bus, label: "2일차" },
-  { href: "/day/3", icon: Mountain, label: "3일차" },
-  { href: "/day/4", icon: PlaneLanding, label: "4일차" },
+  { href: "/day/3", icon: PlaneLanding, label: "3일차" },
   { href: "/info", icon: Info, label: "정보" },
 ];
 
