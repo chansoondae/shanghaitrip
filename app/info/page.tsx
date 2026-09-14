@@ -10,7 +10,7 @@ const sections = [
   {
     emoji: "🙋",
     title: "가이드 미팅",
-    content: "가이드: 지홍창 (池洪沧, CHI HONGCANG)\n연락처: 15821391622\n\n미팅 장소: 상해 푸동공항 입국장 통과 후\n하나투어 미팅 피켓 [ Art Friends ] 앞",
+    content: "인솔자: 에이미\n연락처: 010-2228-0235\n\n현지 가이드: 지홍창 (池洪沧, CHI HONGCANG)\n연락처: 15821391622\n\n도슨트: 채수한\n연락처: 010-7407-1224\n\n미팅 장소: 상해 푸동공항 입국장 통과 후\n하나투어 미팅 피켓 [ Art Friends ] 앞",
   },
   {
     emoji: "🏨",
@@ -25,7 +25,7 @@ const sections = [
   {
     emoji: "💴",
     title: "환전",
-    content: "· 기사·가이드 경비 30달러는 미국 달러로 준비해 주세요. (카드 결제 불가. 한화 지불 가능하나 당일 환율 적용)\n\n· 중국 현지 상점에서는 외국 발행 비자·마스터카드 사용이 제한적입니다. 현금(위안화)을 기본 결제 수단으로 준비하시고, 알리페이·위챗페이 사전 카드 등록을 권장드립니다.\n\n· 현금이 부족하실 경우 가이드에게 소량 환전 가능합니다.",
+    content: "· 기사·가이드 경비 40달러는 미국 달러로 준비해 주세요. (카드 결제 불가. 한화 지불 가능하나 당일 환율 적용)\n\n· 중국 현지 상점에서는 외국 발행 비자·마스터카드 사용이 제한적입니다. 현금(위안화)을 기본 결제 수단으로 준비하시고, 알리페이·위챗페이 사전 카드 등록을 권장드립니다.\n\n· 현금이 부족하실 경우 가이드에게 소량 환전 가능합니다.",
   },
   {
     emoji: "🗺️",
@@ -60,12 +60,12 @@ const sections = [
   {
     emoji: "🍽️",
     title: "식사",
-    content: "1일차: 석식 포함\n2일차: 중식 불포함 (Roof PM, 예약은 해둠), 석식 포함\n3일차: 중식 포함\n\n알레르기나 식사 제한이 있으신 분은 사전에 인솔자에게 알려주세요.",
+    content: "1일차: 석식 포함 (하이디라오)\n2일차: 중식 불포함 (Roof PM, 예약은 해둠), 석식 포함 (점도덕)\n3일차: 중·석식 포함 (쑤저우 현지식 / 초강남 사천요리)\n4일차: 중식 포함\n\n알레르기나 식사 제한이 있으신 분은 사전에 인솔자에게 알려주세요.",
   },
   {
     emoji: "📞",
     title: "비상연락처",
-    content: "인솔자 차가운순대: 010-5663-5153\n가이드 지홍창: 15821391622\n주중 한국대사관: +86-10-8532-0290\n상하이 긴급: 110(경찰) / 119(소방·구급) / 120(응급)",
+    content: "인솔자 에이미: 010-2228-0235\n도슨트 채수한: 010-7407-1224\n현지 가이드 지홍창: 15821391622\n주중 한국대사관: +86-10-8532-0290\n상하이 긴급: 110(경찰) / 119(소방·구급) / 120(응급)",
   },
 ];
 
@@ -77,16 +77,16 @@ export default function InfoPage() {
       <div className="bg-white rounded-2xl p-4 shadow-sm border border-neutral-100 space-y-3">
         <h2 className="text-lg font-bold">📞 연락처</h2>
         <div className="flex flex-col gap-3">
-          <PhoneButton phone="010-5663-5153" label="인솔자 차가운순대" />
+          <PhoneButton phone="010-2228-0235" label="인솔자 에이미" />
           <ExternalLinkButton href="http://pf.kakao.com/_gIxlNb/chat" label="카카오채널 아트프렌즈" />
         </div>
         <a
-          href="https://msstour.hanatour.com/trp/pkg/CHPC0PKG0200M100?pkgCd=CCQ110260822CZ1"
+          href="https://msstour.hanatour.com/trp/pkg/CHPC0PKG0200M100?pkgCd=CCQ110260917CZ1"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs text-neutral-400 underline block text-center"
         >
-          하나투어 예약 CCQ110260822CZ1
+          하나투어 예약 CCQ110260917CZ1
         </a>
       </div>
 

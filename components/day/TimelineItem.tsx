@@ -41,11 +41,25 @@ export function TimelineItem({ time, name, description, address, imagePath, maps
           <div className="p-4 space-y-3">
             <h3 className="font-bold text-base">📍 {name}</h3>
             <p className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line">
-              {description.split(/(\*\*.*?\*\*)/).map((part, i) =>
-                part.startsWith("**") && part.endsWith("**")
-                  ? <strong key={i}>{part.slice(2, -2)}</strong>
-                  : part
-              )}
+              {description.split(/(\*\*.*?\*\*|https?:\/\/[^\s]+)/).map((part, i) => {
+                if (part.startsWith("**") && part.endsWith("**")) {
+                  return <strong key={i}>{part.slice(2, -2)}</strong>;
+                }
+                if (/^https?:\/\//.test(part)) {
+                  return (
+                    <a
+                      key={i}
+                      href={part}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline break-all"
+                    >
+                      {part}
+                    </a>
+                  );
+                }
+                return part;
+              })}
             </p>
             {address && (
               <div className="flex items-start gap-1.5 text-xs text-neutral-400">
