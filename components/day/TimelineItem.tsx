@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { GoogleMapsButton } from "@/components/common/GoogleMapsButton";
+
 interface Props {
   time: string;
   name: string;
@@ -11,6 +12,34 @@ interface Props {
   imagePath?: string;
   mapsUrl?: string;
   isLast: boolean;
+}
+
+function getYoutubeId(url: string): string | null {
+  const patterns = [
+    /youtu\.be\/([\w-]{11})/,
+    /youtube\.com\/watch\?v=([\w-]{11})/,
+    /youtube\.com\/embed\/([\w-]{11})/,
+    /youtube\.com\/shorts\/([\w-]{11})/,
+  ];
+  for (const p of patterns) {
+    const m = url.match(p);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+function YoutubeEmbed({ id }: { id: string }) {
+  return (
+    <div className="relative w-full aspect-video rounded-xl overflow-hidden my-2">
+      <iframe
+        src={`https://www.youtube.com/embed/${id}`}
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        className="absolute inset-0 w-full h-full"
+      />
+    </div>
+  );
 }
 
 export function TimelineItem({ time, name, description, address, imagePath, mapsUrl, isLast }: Props) {
@@ -40,12 +69,14 @@ export function TimelineItem({ time, name, description, address, imagePath, maps
           )}
           <div className="p-4 space-y-3">
             <h3 className="font-bold text-base">📍 {name}</h3>
-            <p className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line">
+            <div className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line">
               {description.split(/(\*\*.*?\*\*|https?:\/\/[^\s]+)/).map((part, i) => {
                 if (part.startsWith("**") && part.endsWith("**")) {
                   return <strong key={i}>{part.slice(2, -2)}</strong>;
                 }
                 if (/^https?:\/\//.test(part)) {
+                  const ytId = getYoutubeId(part);
+                  if (ytId) return <YoutubeEmbed key={i} id={ytId} />;
                   return (
                     <a
                       key={i}
@@ -60,7 +91,7 @@ export function TimelineItem({ time, name, description, address, imagePath, maps
                 }
                 return part;
               })}
-            </p>
+            </div>
             {address && (
               <div className="flex items-start gap-1.5 text-xs text-neutral-400">
                 <MapPin className="h-3.5 w-3.5 shrink-0 mt-0.5" />
